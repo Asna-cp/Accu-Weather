@@ -18,11 +18,9 @@ main {
 
 
 .weather-container {
-    position: absolute;
-	margin-top: 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+	margin-top: 10%;
+	height: auto;
     width: 80%;
     max-width: 400px;
     background: #263755;
@@ -31,10 +29,15 @@ main {
     box-sizing: border-box;
     color: #fff;
     text-align: center;
-    max-height: 400px;
+    /* max-height: 400px; */
     overflow-y: auto;
+	margin-inline: auto;
+
 }
 
+.weather-container::-webkit-scrollbar{
+	display: none;
+}
 .weather-info {
 	margin: 10px;
 	padding: 10px;
@@ -71,12 +74,19 @@ main {
 }
 input {
 	padding: 10px;
-	width: 400px;
-	margin-top: 50px;
+	width: 100%;
 	box-shadow:3px 6px rgba(0, 0, 0, 0.2) ;
 	border-radius: 10px;
 
 
+}
+.header{
+	
+		max-width: 526px;
+		margin: auto;
+		display: flex;
+		align-items: center;
+	
 }
 
 
@@ -87,11 +97,19 @@ button {
 	background-color: #000;
 	color: #fff;
 	border-radius: 10px;
+	width: 138px;
+	/* height: 48px; */
 } 
 h1 {
-    position: absolute;
-    top: 10px; /* Adjust the top distance from the top of the page */
-    left: 20px; /* Adjust the left distance from the left side of the page */
+    /* position: absolute; */
+	/* margin-bottom: 2rem; */
+	text-align: left;
+	padding: 2rem;
+    /* top: 10px; */
+	 /* Adjust the top distance from the top of the page */
+
+    /* left: 20px; */
+	 /* Adjust the left distance from the left side of the page */
     color: #ffffff; /* Set the color of the text */
     font-size: 24px; /* Adjust the font size */
     font-weight: bold; /* Optionally set the font weight */
@@ -99,4 +117,12 @@ h1 {
     z-index: 100; /* Optionally set the z-index to ensure it's above other elements */
 }
 
+@media screen and (max-width:600px){
+	.header{
+		max-width: unset;
+	}
+	.weather-container{
+		width: 100%;
+	}
+}
 

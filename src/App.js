@@ -91,6 +91,7 @@ function App() {
         <FontAwesomeIcon icon={faSun} />
         AccuWeather
       </h1>
+      <div className="header">
       <input
         type="text"
         placeholder="Enter city name"
@@ -98,6 +99,7 @@ function App() {
         onChange={(e) => setCity(e.target.value)}
       />
       <button onClick={getWeatherData}>Get Weather</button>
+      </div>
       {weatherInfo && (
         <div className="weather-container">
           <div className="weather-info">
