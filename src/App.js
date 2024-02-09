@@ -7,12 +7,6 @@ import {
   faCloud,
   faSun,
   faSnowflake,
-  faThunderstorm,
-  faCloudRain,
-  faCloudShowersHeavy,
-  faSmog,
-  faCloudSun,
-  faQuestionCircle
 } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
