@@ -16,75 +16,45 @@ main {
 
   }
 
- html,body {
-	height: 100%;
-	font-size: 22px;
-	margin: 0; 
-	padding: 0;
-
-}
-
-/* .weather-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #aca7a7;
-    border-radius: 16px;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
-    width: 80%;
-    max-width: 400px;
-    max-height: 600px; /* Decrease the maximum height as needed */
-    /* overflow-y: auto; Add vertical scroll if content exceeds container height */
-/* } */ */
 
 .weather-container {
     position: absolute;
+	margin-top: 20px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
     max-width: 400px;
-    background: #de1515;
+    background: #263755;
     border-radius: 16px;
     padding: 20px;
     box-sizing: border-box;
     color: #fff;
     text-align: center;
-    max-height: 600px;
+    max-height: 400px;
     overflow-y: auto;
 }
 
-
-
-/* 
-.weather-container {
-	text-align: center;
-	padding: 20px;
-} */
-
 .weather-info {
 	margin: 10px;
-	/* background-color: #eee; */
 	padding: 10px;
 	text-align: center;
 }
 .weather-info .location{
 	color: #fff;
-	font-size: 32px;
-	font-weight: 500;
+	font-size: 22px;
+	font-weight: 400;
 	text-align: center;
 	text-shadow: 3px 3px rgb(50, 50,70,0.5);
 }
 .weather-info .temp{
 	position: relative;
 	display: inline-block;
-	margin: 30px auto;
+	/* margin: 30px auto; */
+	margin-top: 5px;
 	background-color: rgba(225, 225, 225, 0.2);
 	border-radius: 16px;
-	padding: 15px 25px;
+	padding: 10px 20px;
 	color: #fff;
 	font-size: 50px;
 	font-weight: 900;
@@ -95,14 +65,14 @@ main {
 .weather-info .weather {
 	margin-top: -5px;
 	color: white;
-	font-size: 48px;
-	font-weight: 400;
+	font-size: 28px;
+	font-weight: 200;
 	text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
 input {
 	padding: 10px;
 	width: 400px;
-	margin-top: 150px;
+	margin-top: 50px;
 	box-shadow:3px 6px rgba(0, 0, 0, 0.2) ;
 	border-radius: 10px;
 
@@ -120,7 +90,7 @@ button {
 } 
 h1 {
     position: absolute;
-    top: 20px; /* Adjust the top distance from the top of the page */
+    top: 10px; /* Adjust the top distance from the top of the page */
     left: 20px; /* Adjust the left distance from the left side of the page */
     color: #ffffff; /* Set the color of the text */
     font-size: 24px; /* Adjust the font size */
